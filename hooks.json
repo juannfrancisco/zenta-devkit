@@ -1,0 +1,16 @@
+{
+  "protect-secrets": {
+    "PreToolUse": [
+      {
+        "matcher": "read_file|edit_file|write_file|run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f ./hooks/protect-secrets.sh ]; then ./hooks/protect-secrets.sh; elif [ -n \"${PLUGIN_ROOT:-}\" ] && [ -f \"${PLUGIN_ROOT}/hooks/protect-secrets.sh\" ]; then \"${PLUGIN_ROOT}/hooks/protect-secrets.sh\"; else .agents/hooks/protect-secrets.sh; fi",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

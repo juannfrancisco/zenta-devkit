@@ -1,0 +1,14 @@
+{
+  "name": "zenta-devkit",
+  "displayName": "Zenta Developer Kit",
+  "version": "1.0.0",
+  "description": "Kit integral de desarrollo para el monorepo Zenta (NestJS 11 + Angular 21 + Nx). Incluye generador de vertical slices full-stack, agentes de orquestación y revisión de código adversarial, y hooks de seguridad para protección de credenciales.",
+  "author": {
+    "name": "Zenta Group"
+  },
+  "suggestedPrompts": [
+    "Crea un vertical slice completo para la entidad de Clientes",
+    "Audita con perspectiva adversarial los últimos cambios realizados",
+    "Genera un nuevo módulo con arquitectura de puertos y adaptadores"
+  ]
+}
